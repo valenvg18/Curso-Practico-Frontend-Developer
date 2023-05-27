@@ -15,6 +15,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.inactive {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -71,6 +75,7 @@ nav {
     color: var(--dark);
     font-size: var(--sm);
     margin-right: 12px;
+    cursor: pointer;
 }
 
 /*Nuestro carrito debe tener una posicion relativa para que el 2 lo podamos poner encima*/
