@@ -1,3 +1,5 @@
+/* Estilos Generales */
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -18,6 +20,8 @@ body {
 .inactive {
     display: none;
 }
+
+/* Estilos del Navbar en Desktop */
 
 nav {
     display: flex;
@@ -100,6 +104,9 @@ nav {
     padding: 1px;
 }
 
+
+/* Menu Desktop */
+
 .desktop-menu {
     position: absolute;
     top: 60px;
@@ -144,6 +151,61 @@ nav {
     display: inline-block; /*para que pueda tomar el margin de arriba*/
 }
 
+
+/* Menu mobile */
+
+.mobile-menu {
+    padding: 32px; /*para que tenga espacio a los lados*/
+    position: absolute;
+    top: 60px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--text-input-field);
+}
+
+.mobile-menu ul:last-child {
+    position: absolute;
+    /* bottom: 0; */
+    margin-bottom: 24px;
+}
+
+
+.mobile-menu ul li{
+    margin-bottom: 24px;
+}
+
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+/*Otra forma de poner lo anterior, NO RECOMENDADA
+.email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+*/
+
+.sign-out {
+    color: var(--hospital-green) !important;
+    font-size: var(--sm);
+}
+
+
 @media (max-width: 640px) {
     .menu {
         display: block;
@@ -154,6 +216,18 @@ nav {
     }
 
     .navbar-email {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    
+}
+
+@media (min-width: 641px) { 
+    .mobile-menu {
         display: none;
     }
 }
