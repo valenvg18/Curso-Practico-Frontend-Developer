@@ -212,7 +212,7 @@ nav {
 aside {
     background-color: var(--white);
     width: 360px;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     box-sizing: border-box;
     position: absolute;
     right: 0; /*para que se adhiera a la parte derecha */
@@ -220,6 +220,10 @@ aside {
 
 
 /* Shopping Cart */
+
+#shoppingCartContainer {
+    padding: 0 24px;
+}
 
 .title-container {
     display: flex;
