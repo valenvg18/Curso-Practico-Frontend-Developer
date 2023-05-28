@@ -88,7 +88,7 @@ function closeProductDetailAside() {
 const productList = [];
 
 productList.push({
-    name: 'Limpieza Facial',
+    name: 'Limpieza Facial update',
     price: 320,
     image: 'https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
