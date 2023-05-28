@@ -29,10 +29,16 @@ function toggleDesktopMenu() {
 
 function toggleMobileMenu() {
     const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
+    const isProductDetailClosed = productDetailContainer.classList.contains('inactive');
 
     if (!isAsideClosed) {
         //Cerrar el aside de shopping cart
         shoppingCartContainer.classList.add('inactive');
+    } 
+
+    if (!isProductDetailClosed) {
+        //Cerrar el product detail
+        productDetailContainer.classList.add('inactive');
     } 
 
     mobileMenu.classList.toggle('inactive');
